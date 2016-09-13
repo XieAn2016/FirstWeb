@@ -1,0 +1,157 @@
+/*通用样式开始*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border:0;
+}
+html{
+    font-size: 14px;
+    font-family: Arial;
+}
+
+/*改变搜索框字体颜色开始*/
+::-webkit-input-placeholder{
+    color: #fff;
+}
+#search-input::-moz-placeholder {
+    color: #ffffff;
+}
+:-ms-input-placeholder{
+    color: #fff;
+}
+/*改变搜索框字体颜色结束*/
+
+/*通用样式结束*/
+/*共用样式开始*/
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+/*共用样式结束*/
+
+/*header开始*/
+#header{
+    margin-top:3rem;
+    height:75px;
+}
+#header-nav{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#header-nav li{
+    float: left;
+}
+#header-nav li a{
+    color: #3a494c;
+    font-weight:700;
+    font-size:1.5rem;
+    padding: 0.5rem 2rem;
+}
+#header-nav li a:before{
+    content: '[';
+    display: inline-block;
+    opacity: 0;
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+#header-nav li a:after{
+    content: ']';
+    display: inline-block;
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    transform: translateX(-10px);
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+#header-nav li:hover a:before{
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    transform: translateX(-10px);
+    opacity: 1;
+}
+#header-nav li:hover a:after{
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+    opacity: 1;
+}
+#search-box{
+    width: 30px;
+    height: 28px;
+    float: right;
+    position: relative;
+}
+#search-input{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    border: none;
+    outline: none;
+    background: #279f7c;
+    width: 60%;
+    height: 28px;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #ffffff;
+    display: none;
+}
+#search-btn{
+    background: url('../img/search.png') no-repeat 0px -4px;
+    filter: alpha(opacity=0);
+    color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+@media (max-width: 480px) {
+    .wrapper{
+        width: 100%;
+    }
+    #header-nav li{
+        float: none;
+    }
+}
+/*header结束*/
+
