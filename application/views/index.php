@@ -9,6 +9,7 @@
     <title>首页</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 <header id="header">
@@ -16,19 +17,22 @@
         <a href="#">
             <img src="img/logo.png" alt="图片加载失败">
         </a>
-        <ul id="header-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li style="width: 30px;">
-                <div id="search-box">
-                    <input type="search" id="search-input" placeholder="Enter your search term..">
-                    <button type="submit" id="search-btn"></button>
-                </div>
-            </li>
-        </ul>
+        <div id="header-menu">
+            <a href=""><span><i class="fa fa-bars" aria-hidden="true"></i></span></a>
+            <ul id="header-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li style="width: 30px;">
+                    <div id="search-box">
+                        <input type="search" id="search-input" placeholder="Enter your search term..">
+                        <button type="submit" id="search-btn"></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </header>
 <div id="banner"></div>
