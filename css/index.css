@@ -56,7 +56,14 @@
     margin-top:20px;
     margin-bottom:20px;
     position: relative;
+    overflow: hidden;
 }
+
+#works .blog img{
+    width: 330px;
+    height: 241px;
+}
+
 #works .blog:nth-child(3n){
     margin-right:0;
 }
@@ -70,8 +77,31 @@
     overflow: hidden;
 }
 #works .blog .mask{
+    width: 330px;
+    height: 241px;
     position: absolute;
-
+    top:0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    background: #119f9b;
+    line-height:241px;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
+#works .blog:hover .mask{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+#works .mask
+
 
 /*works样式结束*/
